@@ -51,6 +51,8 @@ dependencies:
   pdf: ^3.11.0
   external_path: ^1.0.3
   gap: ^3.0.1
+  image_gallery_saver: ^2.0.3
+  android_intent_plus: ^5.0.2
 
 dev_dependencies:
   flutter_test:

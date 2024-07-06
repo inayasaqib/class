@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:unitool/Provider/provider.dart';
+import 'package:unitool/Views/Cam%20Scanner/main.page.dart';
 import 'package:unitool/Views/QR%20Code%20Scanner/qr_code_scanner.dart';
 import 'package:unitool/Views/WebView/mywebview.dart';
 import 'package:unitool/Views/audio%20recorder/audio.dart';
@@ -88,16 +89,20 @@ class _HomeState extends State<Home> {
               ),
               InkWell(
                   onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) =>  WebView()));
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => WebView()));
                   },
                   child: Container(
                     padding: const EdgeInsets.all(8),
                     child: const Row(
                       children: [
-                        Image(image: AssetImage("images/web.png",), width: 50, height: 50,),
+                        Image(
+                          image: AssetImage(
+                            "images/web.png",
+                          ),
+                          width: 50,
+                          height: 50,
+                        ),
                         SizedBox(width: 8),
                         Text(
                           'Web View',
@@ -140,10 +145,9 @@ class _HomeState extends State<Home> {
                   ),
                 ),
               ),
-              
             ],
           ),
-           Row(
+          Row(
             children: [
               const SizedBox(
                 width: 60,
@@ -165,6 +169,39 @@ class _HomeState extends State<Home> {
                         SizedBox(width: 8),
                         Text(
                           'Camera',
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                  )),
+            ],
+          ),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const SizedBox(
+                width: 60,
+              ),
+              InkWell(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const MainPage()));
+                  },
+                  child: Container(
+                    padding: const EdgeInsets.all(8),
+                    child: const Row(
+                      children: [
+                        Icon(
+                          Icons.document_scanner_outlined,
+                        ),
+                        SizedBox(width: 8),
+                        Text(
+                          'Cam Scanner',
                           style: TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
