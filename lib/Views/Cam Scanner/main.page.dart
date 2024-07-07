@@ -81,12 +81,12 @@ class _MainPageState extends State<MainPage> {
             MaterialButton(
               color: Colors.teal[350],
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 30),
-              onPressed: captureCameraImage,
+              onPressed: pickGalleryImage,
               child: const Text("Gallery Images"),
             ),
             const Gap(10),
             MaterialButton(
-              onPressed: pickGalleryImage,
+              onPressed: captureCameraImage,
               color: Colors.teal[350],
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 30),
               child: const Text("Capture Image"),

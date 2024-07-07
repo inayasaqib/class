@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "655802989961",
+    "project_id": "unitool-565",
+    "storage_bucket": "unitool-565.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:655802989961:android:320dca4ae2c12721adf558",
+        "android_client_info": {
+          "package_name": "com.example.unitool"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsMkT2NHNtDlLQnDhK4YutKBh2Ybccd70"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

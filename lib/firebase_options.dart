@@ -21,20 +21,11 @@ class DefaultFirebaseOptions {
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for android - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return android;
       case TargetPlatform.iOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for ios - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
         return windows;
       case TargetPlatform.linux:
@@ -68,4 +59,31 @@ class DefaultFirebaseOptions {
     storageBucket: 'unitool-565.appspot.com',
     measurementId: 'G-WGT7MY1G3X',
   );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyCWtnOResdYCO8UfH4t_brxfvwDIaR9dYA',
+    appId: '1:655802989961:ios:83e08bdb6b2f5c93adf558',
+    messagingSenderId: '655802989961',
+    projectId: 'unitool-565',
+    storageBucket: 'unitool-565.appspot.com',
+    iosBundleId: 'com.example.unitool',
+  );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyCWtnOResdYCO8UfH4t_brxfvwDIaR9dYA',
+    appId: '1:655802989961:ios:83e08bdb6b2f5c93adf558',
+    messagingSenderId: '655802989961',
+    projectId: 'unitool-565',
+    storageBucket: 'unitool-565.appspot.com',
+    iosBundleId: 'com.example.unitool',
+  );
+
+  static const FirebaseOptions android = FirebaseOptions(
+    apiKey: 'AIzaSyCsMkT2NHNtDlLQnDhK4YutKBh2Ybccd70',
+    appId: '1:655802989961:android:320dca4ae2c12721adf558',
+    messagingSenderId: '655802989961',
+    projectId: 'unitool-565',
+    storageBucket: 'unitool-565.appspot.com',
+  );
+
 }
